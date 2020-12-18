@@ -5,12 +5,12 @@
 #   with Tkinter.
 #       This code performs following functions:
 #           ->   Addation of Numbers.
-#           ->   Subtraction of Numbers. 
+#           ->   Subtraction of Numbers.
 #           ->   Multiplication of Numbers.
-#           ->   Division of Numbers. 
-#   
+#           ->   Division of Numbers.
+#
 #   Feel free to add more features to the code and create a PR
-#   i'm working on adding more features on the next releases. 
+#   i'm working on adding more features on the next releases.
 #
 #                   Author : Ravi Kiran
 #                   GitHub : iravikiran
@@ -20,30 +20,34 @@
 #importing tkinter.
 from tkinter import *
 
-# A container for TK. 
+# A container for TK.
 root = Tk()
 
-# Title of the Application. 
+# Title of the Application.
 root.title("Calculator")
 
-# User Input field, 40px width set as default. 
-e = Entry(root, width=40, borderwidth=5)
+root.geometry('395x305')
 
-# Grid based orintation of the application, produces 4 columns. 
+# User Input field, 40px width set as default.
+e = Entry(root, width=45, borderwidth=5)
+
+# Grid based orintation of the application, produces 4 columns.
 e.grid(row=0, column=0, columnspan=4, padx=10, pady=10)
 
 
-# Gets the input number from the User. 
+# Gets the input number from the User.
 def button_click(num):
     current = e.get()
     e.delete(0, END)
     e.insert(0, str(current) + str(num))
 
-# Clears the Input screen of the Entered Number. 
+
+# Clears the Input screen of the Entered Number.
 def button_clear():
     e.delete(0, END)
 
-# Function to Add and capture the first number. 
+
+# Function to Add and capture the first number.
 def button_add():
     first = e.get()
     global f_num
@@ -52,7 +56,8 @@ def button_add():
     f_num = int(first)
     e.delete(0, END)
 
-# Checks for the Math operand and then performs the arthematic operation. 
+
+# Checks for the Math operand and then performs the arthematic operation.
 def button_equal():
     sec = e.get()
     e.delete(0, END)
@@ -66,7 +71,7 @@ def button_equal():
         e.insert(0, f_num / int(sec))
 
 
-# Function to Add and capture the first number. 
+# Function to Add and capture the first number.
 def button_sub():
     first = e.get()
     global f_num
@@ -75,7 +80,8 @@ def button_sub():
     f_num = int(first)
     e.delete(0, END)
 
-# Function to Add and capture the first number. 
+
+# Function to Add and capture the first number.
 def button_mul():
     first = e.get()
     global f_num
@@ -84,7 +90,8 @@ def button_mul():
     f_num = int(first)
     e.delete(0, END)
 
-# Function to Add and capture the first number. 
+
+# Function to Add and capture the first number.
 def button_div():
     first = e.get()
     global f_num
@@ -106,13 +113,13 @@ button8 = Button(root, text="8", padx=40, pady=20, command=lambda: button_click(
 button9 = Button(root, text="9", padx=40, pady=20, command=lambda: button_click(9))
 button0 = Button(root, text="0", padx=40, pady=20, command=lambda: button_click(0))
 
-# Buttons declaration for add, mul, sub, equal, div, and clear. 
-button_add = Button(root, text="+", padx=39, pady=20, command=button_add)
-button_equal = Button(root, text="=", padx=39, pady=20, command=button_equal)
-button_clear = Button(root, text="C", padx=39, pady=20, command=button_clear)
-button_sub = Button(root, text="_", padx=39, pady=20, command=button_sub)
-button_mul = Button(root, text="X", padx=39, pady=20, command=button_mul)
-button_div = Button(root, text="/", padx=39, pady=20, command=button_div)
+# Buttons declaration for add, mul, sub, equal, div, and clear.
+button_add = Button(root, text="+", padx=39, pady=20, command=button_add, bg="#ff9e00", fg="#fbfbfb")
+button_equal = Button(root, text="=", padx=39, pady=20, command=button_equal, bg="#ffe95a")
+button_clear = Button(root, text="C", padx=39, pady=20, command=button_clear, bg="#ff9e00", fg="#fbfbfb")
+button_sub = Button(root, text="—", padx=38, pady=20, command=button_sub, bg="#ff9e00", fg="#fbfbfb")
+button_mul = Button(root, text="X", padx=39, pady=20, command=button_mul, bg="#ff9e00", fg="#fbfbfb")
+button_div = Button(root, text="/", padx=40, pady=20, command=button_div, bg="#ff9e00", fg="#fbfbfb")
 
 # Packing up the buttons 1, 2, 3, & + on Row3.
 button1.grid(row=3, column=0)
