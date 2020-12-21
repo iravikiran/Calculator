@@ -1,0 +1,38 @@
+Calculator.
+-----------
+This Python-Tkinter based Calculator is brings a simple and easy way
+to provide easy math operations in GUI environment, The program also enables you to add you are own custom math functions to bring your more UI-like experience for your math problems. This program can be avialable on any platforms so you can use it effectively as required. 
+
+Version History:
+----------------
+What's New with Calculator v1.0: (Latest)
+	- Added Support for below arthematic functions.
+		1. Power of a Number.
+		2. Square of a Number.
+		3. Percentage of a Number.
+	- Added addation color for math function buttons.
+	- Improved Calculator Geometry.
+	
+Bug Fixes:
+	- Fixed minor padding issues.
+	- We hope everthing else is just fine! :)
+
+Calculator v0.2:
+	- Added support for color theme for math functions.
+	- Preset & fixed Calculator Geometry. 
+
+Calculator v0.1:
+	- Support for below arthematic functions:
+		1. Addation
+		2. Subtraction
+		3. Multiplication
+		4. Division.
+	- Basic UI theme. 
+
+We're constantly working hard to add more new features, and implement cool stuffs!
+
+GitHub ID - iravikiran
+
+
+
+  
