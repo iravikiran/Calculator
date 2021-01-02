@@ -9,8 +9,8 @@
 #           ->   Multiplication of Numbers.
 #           ->   Division of Numbers.
 #           ->	 Power of a Number.
-#			->   Square of a Number.
-#			->   Percentage of a Number.
+#	    ->   Square of a Number.
+#	    ->   Percentage of a Number.
 #
 #   Feel free to add more features to the code and create a PR
 #   i'm working on adding more features on the next releases.
